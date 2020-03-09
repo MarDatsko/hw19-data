@@ -1,0 +1,22 @@
+# Database
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dev_profiles_db
+    username: postgres
+    password: root
+# Flyway
+  flyway:
+    url: jdbc:postgresql://localhost:5432/dev_profiles_db
+    password: root
+    user: postgres
+# JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: true
+
